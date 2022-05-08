@@ -1,0 +1,6 @@
+Answers to se303 exercise6
+
+What smells do you identify? For each smell, what refactoring did you choose to apply?
+
+- 
+Which smell did you address first, and why did you choose that first?
