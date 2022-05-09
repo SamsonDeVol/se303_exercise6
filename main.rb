@@ -1,17 +1,16 @@
 class Button
 
-  attr_accessor :label_text, :x_position, :y_position, :foreground_color, :button_color
+  attr_accessor :label_text, :position, :foreground_color, :button_color
 
   def initialize(label_text, x_position, y_position, foreground_color, button_color)
     @label_text = label_text
-    @x_position = x_position
-    @y_position = y_position
-    @foreground_color = foreground_color
-    @button_color = button_color
+    @position = (x_position, y_position)
+    @foreground_color
+    @button_color
   end
 
   def draw_button
-    paint(label_text, x_position, y_position, foreground_color, button_color)
+    paint(label_text, position, foreground_color, button_color)
   end
 
   def dark_mode
