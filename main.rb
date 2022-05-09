@@ -1,16 +1,8 @@
-def draw_button(label_text, x_position, y_position, foreground_color, is_dark_mode)
-  if is_dark_mode
-    paint(label_text, x_position, y_position, foreground_color - 10, '#111111')
-  else
-    paint(label_text, x_position, y_position, foreground_color + 10, '#E0E0E0')
-  end
-end
-
 class Button
 
-  attr_accessor :label_text, :x, :y, :foreground_color, :button_color
+  attr_accessor :label_text, :x_position, :y_position, :foreground_color, :button_color
 
-  def initialize(label_text, x, y, foreground_color, button_color)
+  def initialize(label_text, x_position, y_position, foreground_color, button_color)
     @label_text = label_text
     @x_position = x_position
     @y_position = y_position
