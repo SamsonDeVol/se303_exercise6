@@ -5,8 +5,8 @@ class Button
   def initialize(label_text, x_position, y_position, foreground_color, button_color)
     @label_text = label_text
     @position = (x_position, y_position)
-    @foreground_color
-    @button_color
+    @foreground_color = foreground_color
+    @button_color = button_color
   end
 
   def draw_button
